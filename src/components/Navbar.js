@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { FaUserTie } from "react-icons/fa";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,9 +11,11 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div className="container mx-auto flex justify-between items-center p-4">
-          <h1 className="text-2xl font-bold text-blue-600">My Website</h1>
-
+        <div className="container mx-auto flex justify-between items-center p-6">
+        <h1 className="text-2xl font-bold text-blue-600 flex items-center">
+          <FaUserTie className="mr-2" />
+          Dev Hub Solutions
+        </h1>
           <ul className="hidden md:flex space-x-6 items-center">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
