@@ -19,7 +19,7 @@ export default function Navbar() {
           <ul className="hidden md:flex space-x-6 items-center">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
-            <li><Link to="/testimonials">Testimonials</Link></li>
+            <li><Link to="/blogs">Blogs</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/about">About</Link></li>
             <li>
@@ -45,7 +45,7 @@ export default function Navbar() {
               <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
               <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
               <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
-              <li><Link to="/testimonials" onClick={toggleMenu}>Testimonials</Link></li>
+              <li><Link to="/blogs" onClick={toggleMenu}>Blogs</Link></li>
               <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
               <li>
                 <Link
